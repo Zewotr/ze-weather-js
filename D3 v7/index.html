@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <title>Weather | Find Today's weather</title>
+  </head>
+
+  <body>
+    <section class="navigation">
+      <nav class="navs container">
+        <p class="logo bold">🌦️</p>
+        <ul class="nav-links">
+          <li>
+            <a href="#" class="bold">
+              <span>⛈️</span><br />
+              Weather
+            </a>
+          </li>
+          <li>
+            <a href="cities.html">
+              <span>🏙️</span><br />
+              Cities</a
+            >
+          </li>
+          <li>
+            <a href="map.html">
+              <span>🌍</span><br />
+              Maps</a
+            >
+          </li>
+          <li>
+            <a href="../setting/setting.html"
+              ><span>🛅</span><br />
+              Settings
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section class="main grid">
+      <div class="today-info-container">
+        <div class="search-city">
+          <input
+            type="text"
+            name="searched-city"
+            id="searched-city"
+            class="container"
+            value=""
+            placeholder="search for cities"
+          />
+          <button class="search-btn">🔍</button>
+        </div>
+        <div class="weather-info">
+          <div class="grid grid--2-cols today-weather">
+            <div class="city grid grid--2-rows bold">
+              <p>
+                Madrid
+                <span class="city-description"
+                  ><br />
+                  chance of rain 0%</span
+                >
+              </p>
+              <p><span class="bold now-temp">31</span> &nbsp;°C</p>
+            </div>
+            <div class="condition-img-box bold">
+              <p class="condition-img">☀️</p>
+            </div>
+          </div>
+        </div>
+        <div class="all-today-info container">
+          <p>TODAY'S FORECAST</p>
+          <div class="forecast-container">
+            <div class="forecast-in-time">
+              <p>12:00am</p>
+              <p class="forecast-img">🌦️</p>
+              <p><span class="temperature">25</span>°C</p>
+            </div>
+            <div class="forecast-in-time bold">
+              <p>02:00am</p>
+              <p class="forecast-img">🌦️</p>
+              <p><span class="temperature">25</span> °C</p>
+            </div>
+            <div class="forecast-in-time">
+              <p>04:00am</p>
+              <p class="forecast-img">🌦️</p>
+              <p><span class="temperature">25</span> °C</p>
+            </div>
+            <div class="forecast-in-time">
+              <p>06:00am</p>
+              <p class="forecast-img">🌦️</p>
+              <p><span class="temperature">25</span> °C</p>
+            </div>
+            <div class="forecast-in-time">
+              <p>08:00am</p>
+              <p class="forecast-img">🌦️</p>
+              <p><span class="temperature">25</span> °C</p>
+            </div>
+            <div class="forecast-in-time">
+              <p>10:00am</p>
+              <p class="forecast-img">🌦️</p>
+              <p><span class="temperature">25</span> °C</p>
+            </div>
+            <div class="forecast-in-time">
+              <p>12:00pm</p>
+              <p class="forecast-img">🌦️</p>
+              <p><span class="temperature">25</span> °C</p>
+            </div>
+            <div class="forecast-in-time">
+              <p>02:00pm</p>
+              <p class="forecast-img">🌦️</p>
+              <p><span class="temperature">25</span> °C</p>
+            </div>
+            <div class="forecast-in-time">
+              <p>04:00pm</p>
+              <p class="forecast-img">🌦️</p>
+              <p><span class="temperature">25</span> °C</p>
+            </div>
+            <div class="forecast-in-time">
+              <p>06:00pm</p>
+              <p class="forecast-img">🌦️</p>
+              <p><span class="temperature">25</span> °C</p>
+            </div>
+            <div class="forecast-in-time">
+              <p>08:00pm</p>
+              <p class="forecast-img">🌦️</p>
+              <p><span class="temperature">25</span> °C</p>
+            </div>
+            <div class="forecast-in-time">
+              <p>10:00pm</p>
+              <p class="forecast-img">🌦️</p>
+              <p><span class="temperature">25</span> °C</p>
+            </div>
+          </div>
+        </div>
+        <div class="air-condition-info container">
+          <div class="air-condition-title">
+            <p>Air Conditions</p>
+            <button class="see-more-btn">See More</button>
+          </div>
+          <div class="grid grid--2-cols air-condition-detail">
+            <p>
+              🌡️ &nbsp; Real feel <br /><span class="bold now-temp">31</span
+              ><strong class="bold">°C</strong>
+            </p>
+            <p>
+              🌪️ &nbsp; Wind <br /><span class="bold">0.2</span
+              ><strong class="bold">km/h</strong>
+            </p>
+            <p>
+              💧 &nbsp; Chabce of rain<br /><span class="bold">0</span
+              ><strong class="bold">%</strong>
+            </p>
+            <p>⛱️ &nbsp; UV Index<br /><span class="bold">3</span></p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="dark-log-out">
+          <button id="dark-mood">🌗</button>
+          <button class="log-out">❌</button>
+        </div>
+        <div class="container all-7-days">
+          <p>7 days weather</p>
+          <div class="days-in-week-container">
+            <div class="day-in-week bold">
+              <p class="day-name">Today</p>
+              <p class="condition"><span>X </span> &nbsp; Sunny</p>
+              <p class="temp-in-nums">
+                <span class="high-temp">32</span>/
+                <span class="low-temp">26</span>
+              </p>
+            </div>
+            <div class="day-in-week">
+              <p class="day-name">Friday</p>
+              <p class="condition"><span>X </span> &nbsp; Sunny</p>
+              <p class="temp-in-nums">
+                <span class="high-temp">32</span>/
+                <span class="low-temp">26</span>
+              </p>
+            </div>
+            <div class="day-in-week">
+              <p class="day-name">Friday</p>
+              <p class="condition"><span>X </span> &nbsp; Sunny</p>
+              <p class="temp-in-nums">
+                <span class="high-temp">32</span>/
+                <span class="low-temp">26</span>
+              </p>
+            </div>
+            <div class="day-in-week">
+              <p class="day-name">Friday</p>
+              <p class="condition"><span>X </span> &nbsp; Sunny</p>
+              <p class="temp-in-nums">
+                <span class="high-temp">32</span>/
+                <span class="low-temp">26</span>
+              </p>
+            </div>
+            <div class="day-in-week">
+              <p class="day-name">Friday</p>
+              <p class="condition"><span>X </span> &nbsp; Sunny</p>
+              <p class="temp-in-nums">
+                <span class="high-temp">32</span>/
+                <span class="low-temp">26</span>
+              </p>
+            </div>
+            <div class="day-in-week">
+              <p class="day-name">Monday</p>
+              <p class="condition"><span>X </span> &nbsp; Sunny</p>
+              <p class="temp-in-nums">
+                <span class="high-temp">32</span>/
+                <span class="low-temp">26</span>
+              </p>
+            </div>
+            <div class="day-in-week">
+              <p class="day-name">Monday</p>
+              <p class="condition"><span>X </span> &nbsp; Sunny</p>
+              <p class="temp-in-nums">
+                <span class="high-temp">32</span>/
+                <span class="low-temp">26</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
