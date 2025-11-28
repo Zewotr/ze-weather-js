@@ -1,2 +1,1 @@
-sxdcfgvbjknmxfcgvjbkjnkm
-xcfgvjhbkjkm,
+hello this is the data to be fetched to the browser
